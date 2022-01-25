@@ -76,6 +76,9 @@ class MainActivity : AppCompatActivity() {
         binding.resetButton.setOnClickListener(){
             onResetClicked()
         }
+        binding.resetButton2.setOnClickListener(){
+            on2xButtonClicked()
+        }
 
         // Set the TextViews to the right values
         binding.revenue = revenue
@@ -103,6 +106,15 @@ class MainActivity : AppCompatActivity() {
     private fun onResetClicked(){
         revenue = 0;
         dessertsSold = 0;
+        binding.revenue = revenue
+        binding.amountSold = dessertsSold
+        showCurrentDessert()
+    }
+    private fun on2xButtonClicked(){
+
+        revenue += currentDessert.price*2
+        dessertsSold++
+
         binding.revenue = revenue
         binding.amountSold = dessertsSold
         showCurrentDessert()
