@@ -82,6 +82,21 @@
             app:layout_constraintVertical_bias="0.921"
             tools:ignore="DuplicateClickableBoundsCheck" />
 
+        <Button
+            android:id="@+id/resetButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F9A825"
+            android:text="2x ponts"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/white_background"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.78"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+
         <ImageButton
             android:id="@+id/dessert_button"
             android:layout_width="203dp"
